@@ -1,11 +1,18 @@
+// Sidebar scroll forwarding
 document.querySelector(".sidebar").addEventListener("wheel", (event) => {
-  // Prevent default scrolling behavior on the sidebar
   event.preventDefault();
-
-  // Scroll the content instead
   const content = document.querySelector(".content");
-  content.scrollBy({
-    top: event.deltaY, // Scroll by the same amount as the wheel event
-    // Optional: Smooth scrolling
-  });
+  content.scrollBy({ top: event.deltaY });
 });
+
+// Fade-in scroll animation
+const blocks = document.querySelectorAll(".block");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
+    });
+  },
+  { threshold: 0.15 }
+);
+blocks.forEach((b) => observer.observe(b));
