@@ -9,270 +9,414 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   </head>
 
   <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
     <!-- Scroll progress bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Floating Menu -->
-    <nav class="floating-menu" id="floatingMenu">
-      <a href="#about" class="nav-link" data-section="about">About</a>
-      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
-      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    <!-- Top Navigation -->
+    <nav class="top-nav" id="topNav">
+      <div class="nav-pill">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
     </nav>
 
-    <!-- Animated background orbs -->
-    <div class="bg-orbs" aria-hidden="true">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
+    <!-- Animated background -->
+    <div class="bg-gradient" aria-hidden="true">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
     </div>
 
     <div class="container">
       <!-- Sidebar -->
       <div class="sidebar">
-        <div class="sidebar-text">
-          <h1 class="gradient-name">Harsh Jain</h1>
-          <h2 class="subtitle-typewriter">
-            <span id="typewriter-text"></span><span class="cursor">|</span>
-          </h2>
-          <div class="profile-pic">
-            <div class="glow-ring"></div>
-            <img src="./Images/Harsh.png" alt="Harsh Jain" />
-          </div>
-        </div>
+        <div class="sidebar-inner">
 
-        <section id="skills-logos">
-          <h2 class="purple">Core Skills</h2>
-          <div class="logo-container">
-            <div class="logo-item" data-tooltip="Python">
-              <img src="./Images/python.png" alt="Python" />
+          <!-- Hero Section -->
+          <div class="hero-section">
+            <div class="hero-status">
+              <span class="status-dot"></span>
+              <span class="status-text">Available for opportunities</span>
             </div>
-            <div class="logo-item" data-tooltip="SQL">
-              <img src="./Images/mysql.png" alt="SQL" />
+
+            <div class="profile-pic">
+              <div class="glow-ring-outer"></div>
+              <div class="glow-ring"></div>
+              <img src="./Images/Harsh.png" alt="Harsh Jain" />
             </div>
-            <div class="logo-item" data-tooltip="Java">
-              <img src="./Images/java.png" alt="Java" />
-            </div>
-            <div class="logo-item" data-tooltip="C">
-              <img src="./Images/c.png" alt="C" />
-            </div>
-            <div class="logo-item" data-tooltip="JavaScript">
-              <img src="./Images/javascript.png" alt="JavaScript" />
-            </div>
-            <div class="logo-item" data-tooltip="CSS">
-              <img src="./Images/css.png" alt="CSS" />
-            </div>
-            <div class="logo-item" data-tooltip="HTML">
-              <img src="./Images/icons8-html-1024.png" alt="HTML" />
+
+            <div class="hero-text">
+              <h1 class="gradient-name">Harsh Jain</h1>
+              <h2 class="subtitle-typewriter">
+                <span id="typewriter-text"></span><span class="cursor">|</span>
+              </h2>
+              <div class="hero-meta">
+                <span class="meta-item">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  New York, NY
+                </span>
+                <span class="meta-dot">·</span>
+                <span class="meta-item">Graduating May 2026</span>
+              </div>
             </div>
           </div>
-        </section>
 
-        <div class="button-container">
-          <a href="https://www.linkedin.com/in/-harshitjain/" target="_blank" class="soft-button">LinkedIn</a>
-          <a href="mailto:harshjain.cs.30@gmail.com" class="soft-button">Email Me</a>
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number" data-target="3.85" data-float="true">3.85</div>
+              <div class="stat-label">GPA · Dean's List</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="2" data-suffix="+">2+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="5">5</div>
+              <div class="stat-label">Roles Held</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">AI</div>
+              <div class="stat-label">Focused Engineer</div>
+            </div>
+          </div>
+
+          <!-- Categorized Tech Stack -->
+          <div class="tech-section">
+            <p class="section-label">Technologies</p>
+            <div class="tech-grid">
+
+              <div class="tech-row">
+                <span class="cat-name">Languages</span>
+                <div class="cat-pills">
+                  <span class="tpill">Python</span>
+                  <span class="tpill">Java</span>
+                  <span class="tpill">C · C++</span>
+                  <span class="tpill">SQL</span>
+                  <span class="tpill">JS · TS</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="cat-name">AI & LLM</span>
+                <div class="cat-pills">
+                  <span class="tpill hi">RAG</span>
+                  <span class="tpill hi">LangChain</span>
+                  <span class="tpill hi">AWS Bedrock</span>
+                  <span class="tpill hi">FAISS</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="cat-name">Backend</span>
+                <div class="cat-pills">
+                  <span class="tpill">Express</span>
+                  <span class="tpill">Django</span>
+                  <span class="tpill">Redis</span>
+                  <span class="tpill">PostgreSQL</span>
+                  <span class="tpill">REST</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="cat-name">Cloud</span>
+                <div class="cat-pills">
+                  <span class="tpill">AWS</span>
+                  <span class="tpill">Docker</span>
+                  <span class="tpill">Jenkins</span>
+                  <span class="tpill">CI/CD</span>
+                  <span class="tpill">Linux</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="cat-name">Tools</span>
+                <div class="cat-pills">
+                  <span class="tpill">Git</span>
+                  <span class="tpill">ServiceNow</span>
+                  <span class="tpill">Jira</span>
+                  <span class="tpill">Agile</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="edu-section">
+            <p class="section-label">Education</p>
+            <div class="edu-card">
+              <div class="edu-top">
+                <span class="edu-school">University of Arizona</span>
+                <span class="edu-gpa">3.85 GPA</span>
+              </div>
+              <div class="edu-degree">BS Computer Science · Minor in Software Engineering</div>
+              <div class="edu-dates">Aug 2022 – May 2026</div>
+              <div class="edu-honors">
+                <span class="honor-tag">Highest Merit Scholarship</span>
+                <span class="honor-tag">Dean's List</span>
+                <span class="honor-tag">Highest Academic Distinction</span>
+              </div>
+              <div class="edu-coursework">
+                DSA · OOP · Neural Networks · OS · Networking · Software Engineering
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/-harshitjain/" target="_blank" class="social-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:harshjain.cs.30@gmail.com" class="social-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              Email
+            </a>
+            <a href="https://github.com/harsh7115" target="_blank" class="social-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+
         </div>
       </div>
 
       <!-- Main Content -->
       <div class="content" id="mainContent">
         <div class="content-text">
+
           <!-- About -->
-          <div id="about" class="block intro grey">
-            <h2 class="purple">About Me</h2>
-            <p>
+          <div id="about" class="block intro-block">
+            <div class="block-label">About</div>
+            <p class="intro-text">
               Computer Science senior at the University of Arizona (3.85 GPA, Dean's List) with a focus on AI systems and software engineering. I build things at the intersection of language models and real products — from RAG-based GPT frameworks and LLM evaluation pipelines to founding backend systems for early-stage startups. Currently engineering AI infrastructure at UA × McGraw Hill while completing my degree in May 2026.
             </p>
           </div>
 
-          <!-- Professional Experience -->
-          <div id="experience" class="block section-header-block">
-            <h2 class="purple">Professional Experience</h2>
+          <!-- Experience Section Header -->
+          <div id="experience" class="section-header">
+            <span class="section-label-large">Experience</span>
           </div>
 
           <!-- UA x McGraw Hill -->
           <div class="block experience-block">
-            <div class="section-20 grey"><p>Jan 2026 – Present</p></div>
-            <div class="section-80">
+            <div class="exp-meta">
+              <span class="exp-date">Jan 2026 – Present</span>
+              <span class="exp-badge active-badge">Active</span>
+            </div>
+            <div class="exp-content">
               <p class="role">AI Systems Engineer <span class="role-tag">POC</span></p>
               <p class="company">University of Arizona × McGraw Hill &nbsp;·&nbsp; Remote</p>
-              <ul class="description grey">
+              <ul class="description">
                 <li>Architecting a controlled, RAG-based GPT framework enabling instructors to create textbook-grounded, task-specific AI assistants.</li>
                 <li>Enforcing role-based and content-level guardrails to constrain retrieval and model behavior to approved instructional materials.</li>
                 <li>Designing source-aware response patterns that reference specific textbook chapters or sections to improve transparency and trust.</li>
                 <li>Optimizing retrieval design, chunking strategies, and evaluation criteria to improve response consistency and reduce hallucination risk.</li>
               </ul>
               <div class="badge-row">
-                <button class="rounded-button">RAG</button>
-                <button class="rounded-button">LLM Systems</button>
-                <button class="rounded-button">Prompt Engineering</button>
-                <button class="rounded-button">AWS Bedrock</button>
+                <span class="badge">RAG</span>
+                <span class="badge">LLM Systems</span>
+                <span class="badge">Prompt Engineering</span>
+                <span class="badge">AWS Bedrock</span>
               </div>
             </div>
           </div>
 
           <!-- Handshake Fellowship -->
           <div class="block experience-block">
-            <div class="section-20 grey"><p>Oct 2025 – Present</p></div>
-            <div class="section-80">
+            <div class="exp-meta">
+              <span class="exp-date">Oct 2025 – Present</span>
+              <span class="exp-badge active-badge">Active</span>
+            </div>
+            <div class="exp-content">
               <p class="role">CS Fellow – AI Evaluation & Prompt Engineering</p>
               <p class="company">Handshake AI &nbsp;·&nbsp; Remote</p>
-              <ul class="description grey">
+              <ul class="description">
                 <li>Evaluated and scored 100+ AI-generated outputs weekly to benchmark instruction-following accuracy and reliability.</li>
                 <li>Designed domain-specific prompts for LLMs, improving consistency and precision across multimodal responses.</li>
                 <li>Provided structured feedback to strengthen AI training pipelines and documentation for research validation.</li>
                 <li>Collaborated asynchronously in remote sprints, applying QA and version control practices to milestone-based work.</li>
               </ul>
               <div class="badge-row">
-                <button class="rounded-button">LLM Evaluation</button>
-                <button class="rounded-button">Prompt Engineering</button>
-                <button class="rounded-button">AI Research</button>
-                <button class="rounded-button">Remote Collaboration</button>
+                <span class="badge">LLM Evaluation</span>
+                <span class="badge">Prompt Engineering</span>
+                <span class="badge">AI Research</span>
+                <span class="badge">Remote Collaboration</span>
               </div>
             </div>
           </div>
 
           <!-- SAAQ -->
           <div class="block experience-block">
-            <div class="section-20 grey"><p>Oct 2025 – Jan 2026</p></div>
-            <div class="section-80">
+            <div class="exp-meta">
+              <span class="exp-date">Oct 2025 – Jan 2026</span>
+            </div>
+            <div class="exp-content">
               <p class="role">Founding Engineer</p>
               <p class="company">SkillfullyAware (SAAQ) App &nbsp;·&nbsp; Tucson</p>
-              <ul class="description grey">
+              <ul class="description">
                 <li>Designed scalable, API-driven backend services to process structured and unstructured user input into analytics pipelines.</li>
                 <li>Implemented RESTful services powering frontend features and internal system integrations.</li>
                 <li>Led MVP backend development across core services, data models, and application workflows under evolving product requirements.</li>
                 <li>Integrated external LLM APIs and vector-based retrieval components to support early-stage AI feature experimentation.</li>
               </ul>
               <div class="badge-row">
-                <button class="rounded-button">REST APIs</button>
-                <button class="rounded-button">Vector Databases</button>
-                <button class="rounded-button">LangChain</button>
-                <button class="rounded-button">MVP Development</button>
+                <span class="badge">REST APIs</span>
+                <span class="badge">Vector Databases</span>
+                <span class="badge">LangChain</span>
+                <span class="badge">MVP Development</span>
               </div>
             </div>
           </div>
 
           <!-- Andrew Weil Center -->
           <div class="block experience-block">
-            <div class="section-20 grey"><p>Aug 2025 – Dec 2025</p></div>
-            <div class="section-80">
+            <div class="exp-meta">
+              <span class="exp-date">Aug 2025 – Dec 2025</span>
+            </div>
+            <div class="exp-content">
               <p class="role">AI Solutions Developer – RAG Systems</p>
               <p class="company">Andrew Weil Center for Integrative Medicine &nbsp;·&nbsp; Tucson</p>
-              <ul class="description grey">
+              <ul class="description">
                 <li>Built an AI-powered RAG chatbot for the CanHeal Cancer Toolkit, deployed on AWS microservices to streamline oncology resource access.</li>
                 <li>Conducted user research and iterative testing with medical stakeholders to ensure usability and HIPAA compliance.</li>
                 <li>Produced technical documentation and delivered client-ready demos for faculty and sponsors.</li>
               </ul>
               <div class="badge-row">
-                <button class="rounded-button">AWS</button>
-                <button class="rounded-button">RAG</button>
-                <button class="rounded-button">Microservices</button>
-                <button class="rounded-button">Agile</button>
+                <span class="badge">AWS</span>
+                <span class="badge">RAG</span>
+                <span class="badge">Microservices</span>
+                <span class="badge">Agile</span>
               </div>
             </div>
           </div>
 
           <!-- GRC Analyst -->
           <div class="block experience-block">
-            <div class="section-20 grey"><p>Sep 2023 – Aug 2025</p></div>
-            <div class="section-80">
+            <div class="exp-meta">
+              <span class="exp-date">Sep 2023 – Aug 2025</span>
+            </div>
+            <div class="exp-content">
               <p class="role">GRC Automation Analyst</p>
               <p class="company">University of Arizona IT Services &nbsp;·&nbsp; Tucson</p>
-              <ul class="description grey">
+              <ul class="description">
                 <li>Automated ServiceNow GRC workflows, cutting manual review time by 25% and improving policy audit traceability.</li>
                 <li>Developed SQL/PostgreSQL dashboards tracking compliance risk metrics used by three internal teams.</li>
                 <li>Delivered Agile-based feature updates under tight deadlines while maintaining Git version control integrity.</li>
               </ul>
               <div class="badge-row">
-                <button class="rounded-button">ServiceNow</button>
-                <button class="rounded-button">SQL</button>
-                <button class="rounded-button">Agile</button>
-                <button class="rounded-button">Git</button>
+                <span class="badge">ServiceNow</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Agile</span>
+                <span class="badge">Git</span>
               </div>
             </div>
           </div>
 
-          <!-- Projects -->
-          <div id="projects" class="block section-header-block">
-            <h2 class="purple">Projects</h2>
+          <!-- Projects Section Header -->
+          <div id="projects" class="section-header">
+            <span class="section-label-large">Projects</span>
           </div>
 
           <!-- OS Simulation -->
           <div class="block project-block">
-            <div class="section-20 grey"><p>2025</p></div>
-            <div class="section-80">
+            <div class="project-year">2025</div>
+            <div class="project-content">
               <p class="role">Operating System Simulation</p>
-              <p class="description grey">
-                Simulated a UNIX-like OS kernel with process scheduling, inter-process communication, and clock interrupt handling,
-                reinforcing concurrency and synchronization fundamentals.
+              <p class="description-text">
+                Simulated a UNIX-like OS kernel with process scheduling, inter-process communication, and clock interrupt handling, reinforcing concurrency and synchronization fundamentals.
               </p>
               <div class="badge-row">
-                <button class="rounded-button-orange">C</button>
-                <button class="rounded-button-orange">Concurrency</button>
-                <button class="rounded-button-orange">Systems Programming</button>
+                <span class="badge orange">C</span>
+                <span class="badge orange">Concurrency</span>
+                <span class="badge orange">Systems Programming</span>
               </div>
             </div>
           </div>
 
           <!-- TCP Proxy -->
           <div class="block project-block">
-            <div class="section-20 grey"><p>2025</p></div>
-            <div class="section-80">
+            <div class="project-year">2025</div>
+            <div class="project-content">
               <p class="role">Mobile TCP Proxy Tool</p>
-              <p class="description grey">
+              <p class="description-text">
                 Designed a TCP proxy to maintain active client-server connections across IP changes, applying core networking concepts and socket programming.
               </p>
               <div class="badge-row">
-                <button class="rounded-button-orange">C</button>
-                <button class="rounded-button-orange">Networking</button>
-                <button class="rounded-button-orange">TCP/IP</button>
+                <span class="badge orange">C</span>
+                <span class="badge orange">Networking</span>
+                <span class="badge orange">TCP/IP</span>
               </div>
             </div>
           </div>
 
           <!-- Finance App -->
           <div class="block project-block">
-            <div class="section-20 grey"><p>2024</p></div>
-            <div class="section-80">
+            <div class="project-year">2024</div>
+            <div class="project-content">
               <p class="role">Personal Finance Management App</p>
-              <p class="description grey">
+              <p class="description-text">
                 Built a full-stack JavaFX finance app that calculates loans, tracks expenses, and visualizes amortization schedules, with SQLite persistence and Jenkins-based CI/CD.
               </p>
               <div class="badge-row">
-                <button class="rounded-button-orange">Java</button>
-                <button class="rounded-button-orange">JavaFX</button>
-                <button class="rounded-button-orange">Jenkins</button>
-                <button class="rounded-button-orange">Full-Stack</button>
+                <span class="badge orange">Java</span>
+                <span class="badge orange">JavaFX</span>
+                <span class="badge orange">Jenkins</span>
+                <span class="badge orange">Full-Stack</span>
               </div>
             </div>
           </div>
 
           <!-- Jira Project -->
           <div class="block project-block">
-            <div class="section-20 grey"><p>2024</p></div>
-            <div class="section-80">
+            <div class="project-year">2024</div>
+            <div class="project-content">
               <p class="role">JIRA-Inspired Project Management Tool</p>
-              <p class="description grey">
+              <p class="description-text">
                 Created a team collaboration app supporting task creation, sprint tracking, and real-time updates through Socket.io with AWS-hosted backend.
               </p>
               <div class="badge-row">
-                <button class="rounded-button-orange">Python</button>
-                <button class="rounded-button-orange">Django</button>
-                <button class="rounded-button-orange">AWS</button>
-                <button class="rounded-button-orange">Agile</button>
+                <span class="badge orange">Python</span>
+                <span class="badge orange">Django</span>
+                <span class="badge orange">AWS</span>
+                <span class="badge orange">Agile</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- OneLiner | Reddit Hackathon -->
+          <div class="block project-block">
+            <div class="project-year">2025</div>
+            <div class="project-content">
+              <p class="role">OneLiner — Reddit Hackathon</p>
+              <p class="description-text">
+                Built a full-stack Reddit-integrated app with sub-100ms backend APIs using Redis caching. Served 1,000+ potential users and reduced runtime errors 40% via TypeScript strict mode.
+              </p>
+              <div class="badge-row">
+                <span class="badge orange">React 19</span>
+                <span class="badge orange">Express.js</span>
+                <span class="badge orange">TypeScript</span>
+                <span class="badge orange">Redis</span>
+                <span class="badge orange">Reddit API</span>
               </div>
             </div>
           </div>
 
           <!-- Beyond Tech -->
           <div id="contact" class="block beyond-block">
-            <p class="role">Beyond Tech</p>
-            <p class="description grey">
+            <div class="block-label">Beyond Tech</div>
+            <p class="intro-text">
               Outside of engineering, I'm passionate about fitness (chasing a stronger bench press), basketball, and boxing.
               I also read about geopolitics, anthropology, Hinduism, and astrology, blending technical problem-solving with curiosity about culture and humanity.
             </p>
@@ -280,18 +424,22 @@
 
           <!-- Resume -->
           <div class="resume-container">
-            <a href="./Resume.pdf" download class="soft-button resume-btn">⬇ &nbsp;Download Résumé</a>
+            <a href="./Resume.pdf" download class="resume-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Résumé
+            </a>
           </div>
 
           <!-- Footer -->
-          <footer class="footer grey">
-            <p>© 2026 Harsh Jain</p>
-            <p>
-              <a href="mailto:harshjain.cs.30@gmail.com" class="footer-link">Contact</a> |
-              <a href="https://linkedin.com/in/-harshitjain/" target="_blank" class="footer-link">LinkedIn</a> |
+          <footer class="footer">
+            <p class="footer-copy">© 2026 Harsh Jain</p>
+            <div class="footer-links">
+              <a href="mailto:harshjain.cs.30@gmail.com" class="footer-link">Contact</a>
+              <a href="https://linkedin.com/in/-harshitjain/" target="_blank" class="footer-link">LinkedIn</a>
               <a href="https://github.com/harsh7115" target="_blank" class="footer-link">GitHub</a>
-            </p>
+            </div>
           </footer>
+
         </div>
       </div>
     </div>
@@ -299,4 +447,3 @@
     <script src="index.js"></script>
   </body>
 </html>
-
