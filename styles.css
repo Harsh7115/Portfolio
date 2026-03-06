@@ -1034,6 +1034,16 @@ body {
   flex: 1;
 }
 
+.project-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--accent);
+}
+
 /* ==============================
    CURRENTLY FOCUSED ON
 ============================== */
