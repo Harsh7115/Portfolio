@@ -30,7 +30,7 @@
 
   // Expand ring on interactive elements
   document.querySelectorAll(
-    'a, button, .stat-item, .badge, .social-btn, .resume-btn, .marquee-item'
+    'a, button, .stat-item, .badge, .tpill, .social-btn, .resume-btn'
   ).forEach(el => {
     el.addEventListener('mouseenter', () => ring.classList.add('expand'));
     el.addEventListener('mouseleave', () => ring.classList.remove('expand'));
