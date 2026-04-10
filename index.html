@@ -1,469 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harsh Jain | Portfolio</title>
-    <link rel="icon" href="./Images/icon.png" />
-    <meta name="description" content="Portfolio of Harsh Jain — AI & Software Engineer skilled in RAG, LLMs, DevOps, and full-stack development." />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Jain | Portfolio</title>
+  <link rel="icon" href="./Images/icon.png" />
+  <meta name="description" content="Portfolio of Harsh Jain — AI &amp; Software Engineer skilled in RAG, LLMs, DevOps, and full-stack development." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-  <body>
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Scroll progress bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Top Navigation -->
-    <nav class="top-nav" id="topNav">
-      <div class="nav-pill">
-        <a href="#about" class="nav-link" data-section="about">About</a>
-        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
-        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-      </div>
-    </nav>
-
-    <!-- Animated background -->
-    <div class="bg-gradient" aria-hidden="true">
-      <div class="gradient-orb orb-1"></div>
-      <div class="gradient-orb orb-2"></div>
-      <div class="gradient-orb orb-3"></div>
+  <!-- Top Navigation -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-pill">
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
     </div>
+  </nav>
 
-    <div class="container">
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div class="sidebar-inner">
+  <!-- Animated background -->
+  <div class="bg-gradient" aria-hidden="true">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
 
-          <!-- Hero Section -->
-          <div class="hero-section">
-            <div class="hero-status">
-              <span class="status-dot"></span>
-              <span class="status-text">Available for opportunities</span>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-inner">
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for opportunities</span>
+          </div>
+          <div class="profile-pic">
+            <div class="glow-ring-outer"></div>
+            <div class="glow-ring"></div>
+            <img src="./Images/Harsh.png" alt="Harsh Jain" />
+          </div>
+          <div class="hero-text">
+            <h1 class="gradient-name">Harsh Jain</h1>
+            <h2 class="subtitle-typewriter">
+              <span id="typewriter-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-tagline">Building scalable AI and automation systems</p>
+            <div class="hero-meta">
+              <span class="meta-item">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                New York, NY
+              </span>
+              <span class="meta-dot">&middot;</span>
+              <span class="meta-item">Graduating May 2026</span>
             </div>
+          </div>
+        </div>
 
-            <div class="profile-pic">
-              <div class="glow-ring-outer"></div>
-              <div class="glow-ring"></div>
-              <img src="./Images/Harsh.png" alt="Harsh Jain" />
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="3.85" data-float="true">3.85</div>
+            <div class="stat-label">GPA &middot; Dean's List</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="2" data-suffix="+">2+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="5">5</div>
+            <div class="stat-label">Roles Held</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">AI</div>
+            <div class="stat-label">Focused Engineer</div>
+          </div>
+        </div>
+
+        <!-- Categorized Tech Stack -->
+        <div class="tech-section">
+          <p class="section-label">Technologies</p>
+          <div class="tech-grid">
+            <div class="tech-row">
+              <span class="cat-name">Languages</span>
+              <div class="cat-pills">
+                <span class="tpill">Python</span>
+                <span class="tpill">Java</span>
+                <span class="tpill">C &middot; C++</span>
+                <span class="tpill">Go</span>
+                <span class="tpill">JS &middot; TS</span>
+              </div>
             </div>
-
-            <div class="hero-text">
-              <h1 class="gradient-name">Harsh Jain</h1>
-              <h2 class="subtitle-typewriter">
-                <span id="typewriter-text"></span><span class="cursor">|</span>
-              </h2>
-              <p class="hero-tagline">Building scalable AI and automation systems</p>
-              <div class="hero-meta">
-                <span class="meta-item">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  New York, NY
-                </span>
-                <span class="meta-dot">·</span>
-                <span class="meta-item">Graduating May 2026</span>
+            <div class="tech-row">
+              <span class="cat-name">AI &amp; LLM</span>
+              <div class="cat-pills">
+                <span class="tpill hi">RAG</span>
+                <span class="tpill hi">LangChain</span>
+                <span class="tpill hi">AWS Bedrock</span>
+                <span class="tpill hi">FAISS</span>
+              </div>
+            </div>
+            <div class="tech-row">
+              <span class="cat-name">Backend</span>
+              <div class="cat-pills">
+                <span class="tpill">Express</span>
+                <span class="tpill">Django</span>
+                <span class="tpill">Redis</span>
+                <span class="tpill">PostgreSQL</span>
+                <span class="tpill">REST</span>
+              </div>
+            </div>
+            <div class="tech-row">
+              <span class="cat-name">Cloud</span>
+              <div class="cat-pills">
+                <span class="tpill">AWS</span>
+                <span class="tpill">Docker</span>
+                <span class="tpill">Jenkins</span>
+                <span class="tpill">CI/CD</span>
+                <span class="tpill">Linux</span>
+              </div>
+            </div>
+            <div class="tech-row">
+              <span class="cat-name">Tools</span>
+              <div class="cat-pills">
+                <span class="tpill">Git</span>
+                <span class="tpill">ServiceNow</span>
+                <span class="tpill">Jira</span>
+                <span class="tpill">Agile</span>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Stats Grid -->
-          <div class="stats-grid">
-            <div class="stat-item">
-              <div class="stat-number" data-target="3.85" data-float="true">3.85</div>
-              <div class="stat-label">GPA · Dean's List</div>
+        <!-- Education -->
+        <div class="edu-section">
+          <p class="section-label">Education</p>
+          <div class="edu-card">
+            <div class="edu-top">
+              <span class="edu-school">University of Arizona</span>
+              <span class="edu-gpa">3.85 GPA</span>
             </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="2" data-suffix="+">2+</div>
-              <div class="stat-label">Years Experience</div>
+            <div class="edu-degree">BS Computer Science &middot; Minor in Software Engineering</div>
+            <div class="edu-dates">Aug 2022 &ndash; May 2026</div>
+            <div class="edu-honors">
+              <span class="honor-tag">Highest Merit Scholarship</span>
+              <span class="honor-tag">Dean's List</span>
+              <span class="honor-tag">Highest Academic Distinction</span>
             </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="5">5</div>
-              <div class="stat-label">Roles Held</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">AI</div>
-              <div class="stat-label">Focused Engineer</div>
-            </div>
-          </div>
-
-          <!-- Categorized Tech Stack -->
-          <div class="tech-section">
-            <p class="section-label">Technologies</p>
-            <div class="tech-grid">
-
-              <div class="tech-row">
-                <span class="cat-name">Languages</span>
-                <div class="cat-pills">
-                  <span class="tpill">Python</span>
-                  <span class="tpill">Java</span>
-                  <span class="tpill">C · C++</span>
-                  <span class="tpill">Go</span>
-                  <span class="tpill">JS · TS</span>
-                </div>
-              </div>
-
-              <div class="tech-row">
-                <span class="cat-name">AI & LLM</span>
-                <div class="cat-pills">
-                  <span class="tpill hi">RAG</span>
-                  <span class="tpill hi">LangChain</span>
-                  <span class="tpill hi">AWS Bedrock</span>
-                  <span class="tpill hi">FAISS</span>
-                </div>
-              </div>
-
-              <div class="tech-row">
-                <span class="cat-name">Backend</span>
-                <div class="cat-pills">
-                  <span class="tpill">Express</span>
-                  <span class="tpill">Django</span>
-                  <span class="tpill">Redis</span>
-                  <span class="tpill">PostgreSQL</span>
-                  <span class="tpill">REST</span>
-                </div>
-              </div>
-
-              <div class="tech-row">
-                <span class="cat-name">Cloud</span>
-                <div class="cat-pills">
-                  <span class="tpill">AWS</span>
-                  <span class="tpill">Docker</span>
-                  <span class="tpill">Jenkins</span>
-                  <span class="tpill">CI/CD</span>
-                  <span class="tpill">Linux</span>
-                </div>
-              </div>
-
-              <div class="tech-row">
-                <span class="cat-name">Tools</span>
-                <div class="cat-pills">
-                  <span class="tpill">Git</span>
-                  <span class="tpill">ServiceNow</span>
-                  <span class="tpill">Jira</span>
-                  <span class="tpill">Agile</span>
-                </div>
-              </div>
-
+            <div class="edu-coursework">
+              DSA &middot; OOP &middot; Neural Networks &middot; OS &middot; Networking &middot; Software Engineering
             </div>
           </div>
+        </div>
 
-          <!-- Education -->
-          <div class="edu-section">
-            <p class="section-label">Education</p>
-            <div class="edu-card">
-              <div class="edu-top">
-                <span class="edu-school">University of Arizona</span>
-                <span class="edu-gpa">3.85 GPA</span>
-              </div>
-              <div class="edu-degree">BS Computer Science · Minor in Software Engineering</div>
-              <div class="edu-dates">Aug 2022 – May 2026</div>
-              <div class="edu-honors">
-                <span class="honor-tag">Highest Merit Scholarship</span>
-                <span class="honor-tag">Dean's List</span>
-                <span class="honor-tag">Highest Academic Distinction</span>
-              </div>
-              <div class="edu-coursework">
-                DSA · OOP · Neural Networks · OS · Networking · Software Engineering
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Links -->
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/-harshitjain/" target="_blank" class="social-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
-            </a>
-            <a href="mailto:harshjain.cs.30@gmail.com" class="social-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-              Email
-            </a>
-            <a href="https://github.com/harsh7115" target="_blank" class="social-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-          </div>
-
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/-harshitjain/" target="_blank" class="social-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:harshjain.cs.30@gmail.com" class="social-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+          <a href="https://github.com/harsh7115" target="_blank" class="social-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
+    </div>
 
-      <!-- Main Content -->
-      <div class="content" id="mainContent">
-        <div class="content-text">
+    <!-- Main Content -->
+    <div class="content" id="mainContent">
+      <div class="content-text">
 
-          <!-- About -->
-          <div id="about" class="block intro-block">
-            <div class="block-label">About</div>
-            <p class="intro-text">
-              Computer Science senior at the University of Arizona (3.85 GPA, Dean's List) with a focus on AI systems and software engineering. I build things at the intersection of language models and real products, from RAG-based GPT frameworks and LLM evaluation pipelines to founding backend systems for early-stage startups. Currently engineering AI infrastructure at UA × McGraw Hill while completing my degree in May 2026.
-            </p>
+        <!-- About -->
+        <div id="about" class="block intro-block">
+          <div class="block-label">About</div>
+          <p class="intro-text">
+            Computer Science senior at the University of Arizona (3.85 GPA, Dean's List) with a focus on AI systems and software engineering. I build things at the intersection of language models and real products, from RAG-based GPT frameworks and LLM evaluation pipelines to founding backend systems for early-stage startups. Currently engineering AI infrastructure at UA &times; McGraw Hill while completing my degree in May 2026.
+          </p>
+        </div>
+
+        <!-- Experience Section Header -->
+        <div id="experience" class="section-header">
+          <span class="section-label-large">Experience</span>
+        </div>
+
+        <!-- UA x McGraw Hill -->
+        <div class="block experience-block">
+          <div class="exp-meta">
+            <span class="exp-date">Jan 2026 &ndash; Present</span>
+            <span class="exp-badge active-badge">Active</span>
           </div>
-
-          <!-- Experience Section Header -->
-          <div id="experience" class="section-header">
-            <span class="section-label-large">Experience</span>
-          </div>
-
-          <!-- UA x McGraw Hill -->
-          <div class="block experience-block">
-            <div class="exp-meta">
-              <span class="exp-date">Jan 2026 – Present</span>
-              <span class="exp-badge active-badge">Active</span>
-            </div>
-            <div class="exp-content">
-              <p class="role">AI Systems Engineer <span class="role-tag">POC</span></p>
-              <p class="company">University of Arizona × McGraw Hill &nbsp;·&nbsp; Remote</p>
-              <ul class="description">
-                <li>Architecting a controlled, RAG-based GPT framework enabling instructors to create textbook-grounded, task-specific AI assistants.</li>
-                <li>Enforcing role-based and content-level guardrails to constrain retrieval and model behavior to approved instructional materials.</li>
-                <li>Designing source-aware response patterns that reference specific textbook chapters or sections to improve transparency and trust.</li>
-                <li>Optimizing retrieval design, chunking strategies, and evaluation criteria to improve response consistency and reduce hallucination risk.</li>
-              </ul>
-              <div class="badge-row">
-                <span class="badge">RAG</span>
-                <span class="badge">LLM Systems</span>
-                <span class="badge">Prompt Engineering</span>
-                <span class="badge">AWS Bedrock</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Handshake Fellowship -->
-          <div class="block experience-block">
-            <div class="exp-meta">
-              <span class="exp-date">Sep 2025 – Present</span>
-              <span class="exp-badge active-badge">Active</span>
-            </div>
-            <div class="exp-content">
-              <p class="role">Computer Science Fellow</p>
-              <p class="company">Handshake AI &nbsp;·&nbsp; Remote</p>
-              <ul class="description">
-                <li>Building reproducible Docker-based test environments to enable automated evaluation of AI software engineering agents at scale.</li>
-                <li>Re-implementing bug fixes across unfamiliar codebases as ground-truth solutions, authoring fail-to-pass test cases and structured problem prompts for AI agent training.</li>
-                <li>Analyzing failure patterns in agent outputs to refine evaluation pipelines and improve benchmark reliability across iterative testing cycles.</li>
-              </ul>
-              <div class="badge-row">
-                <span class="badge">AI Agent Benchmarking</span>
-                <span class="badge">Docker</span>
-                <span class="badge">LLM Evaluation</span>
-                <span class="badge">Fail-to-Pass Testing</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- SAAQ -->
-          <div class="block experience-block">
-            <div class="exp-meta">
-              <span class="exp-date">Oct 2025 – Jan 2026</span>
-            </div>
-            <div class="exp-content">
-              <p class="role">Founding Engineer</p>
-              <p class="company">SkillfullyAware (SAAQ) App &nbsp;·&nbsp; Tucson</p>
-              <ul class="description">
-                <li>Designed scalable, API-driven backend services to process structured and unstructured user input into analytics pipelines.</li>
-                <li>Implemented RESTful services powering frontend features and internal system integrations.</li>
-                <li>Led MVP backend development across core services, data models, and application workflows under evolving product requirements.</li>
-                <li>Integrated external LLM APIs and vector-based retrieval components to support early-stage AI feature experimentation.</li>
-              </ul>
-              <div class="badge-row">
-                <span class="badge">REST APIs</span>
-                <span class="badge">Vector Databases</span>
-                <span class="badge">LangChain</span>
-                <span class="badge">MVP Development</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Andrew Weil Center -->
-          <div class="block experience-block">
-            <div class="exp-meta">
-              <span class="exp-date">Aug 2025 – Dec 2025</span>
-            </div>
-            <div class="exp-content">
-              <p class="role">AI Solutions Developer – RAG Systems</p>
-              <p class="company">Andrew Weil Center for Integrative Medicine &nbsp;·&nbsp; Tucson</p>
-              <ul class="description">
-                <li>Built an AI-powered RAG chatbot for the CanHeal Cancer Toolkit, deployed on AWS microservices to streamline oncology resource access.</li>
-                <li>Conducted user research and iterative testing with medical stakeholders to ensure usability and HIPAA compliance.</li>
-                <li>Produced technical documentation and delivered client-ready demos for faculty and sponsors.</li>
-              </ul>
-              <div class="badge-row">
-                <span class="badge">AWS</span>
-                <span class="badge">RAG</span>
-                <span class="badge">Microservices</span>
-                <span class="badge">Agile</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- GRC Analyst -->
-          <div class="block experience-block">
-            <div class="exp-meta">
-              <span class="exp-date">Sep 2023 – Aug 2025</span>
-            </div>
-            <div class="exp-content">
-              <p class="role">GRC Automation Analyst</p>
-              <p class="company">University of Arizona IT Services &nbsp;·&nbsp; Tucson</p>
-              <ul class="description">
-                <li>Automated ServiceNow GRC workflows, cutting manual review time by 25% and improving policy audit traceability.</li>
-                <li>Developed SQL/PostgreSQL dashboards tracking compliance risk metrics used by three internal teams.</li>
-                <li>Delivered Agile-based feature updates under tight deadlines while maintaining Git version control integrity.</li>
-              </ul>
-              <div class="badge-row">
-                <span class="badge">ServiceNow</span>
-                <span class="badge">SQL</span>
-                <span class="badge">Agile</span>
-                <span class="badge">Git</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Projects Section Header -->
-          <div id="projects" class="section-header">
-            <span class="section-label-large">Projects</span>
-          </div>
-
-          <!-- go-distributed-kv -->
-          <div class="block project-block">
-            <div class="project-year">2025</div>
-            <div class="project-content">
-              <p class="role">
-                <a href="https://github.com/Harsh7115/go-distributed-kv" target="_blank" class="project-link">
-                  go-distributed-kv
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </p>
-              <p class="description-text">
-                Fault-tolerant distributed key-value store built from scratch in Go using the Raft consensus algorithm — implements leader election, log replication, snapshotting, and membership changes. Serves ~12k write ops/sec and ~18k linearizable reads/sec on a 3-node cluster via a gRPC transport layer and clean HTTP API.
-              </p>
-              <div class="badge-row">
-                <span class="badge orange">Go</span>
-                <span class="badge orange">Raft</span>
-                <span class="badge orange">gRPC</span>
-                <span class="badge orange">Distributed Systems</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- unix-shell -->
-          <div class="block project-block">
-            <div class="project-year">2025</div>
-            <div class="project-content">
-              <p class="role">
-                <a href="https://github.com/Harsh7115/unix-shell" target="_blank" class="project-link">
-                  unix-shell
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </p>
-              <p class="description-text">
-                POSIX-compliant Unix shell implemented from scratch in C — supports arbitrary pipeline chains, I/O redirection, background jobs, signal handling (SIGINT, SIGTSTP, SIGCHLD), and a full set of built-ins including job control (fg/bg), history, and environment variable management.
-              </p>
-              <div class="badge-row">
-                <span class="badge orange">C</span>
-                <span class="badge orange">Systems Programming</span>
-                <span class="badge orange">Unix</span>
-                <span class="badge orange">Process Management</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- OS Simulation -->
-          <div class="block project-block">
-            <div class="project-year">2025</div>
-            <div class="project-content">
-              <p class="role">Operating System Simulation</p>
-              <p class="description-text">
-                Engineered a UNIX-like OS kernel in C from scratch — implementing 4 scheduling algorithms (FCFS, SJF, Round Robin, Priority), IPC via semaphores and shared memory, and hardware interrupt simulation managing 50+ concurrent process contexts.
-              </p>
-              <div class="badge-row">
-                <span class="badge orange">C</span>
-                <span class="badge orange">Concurrency</span>
-                <span class="badge orange">Systems Programming</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Jira Project -->
-          <div class="block project-block">
-            <div class="project-year">2024</div>
-            <div class="project-content">
-              <p class="role">JIRA-Inspired Project Management Tool</p>
-              <p class="description-text">
-                Shipped a collaborative project management platform supporting real-time sprint tracking and task workflows across multi-user teams — powered by Django and Socket.io, deployed on AWS with sub-second update propagation.
-              </p>
-              <div class="badge-row">
-                <span class="badge orange">Python</span>
-                <span class="badge orange">Django</span>
-                <span class="badge orange">AWS</span>
-                <span class="badge orange">Agile</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- OneLiner | Reddit Hackathon -->
-          <div class="block project-block">
-            <div class="project-year">2025</div>
-            <div class="project-content">
-              <p class="role">OneLiner — Reddit Hackathon</p>
-              <p class="description-text">
-                Built a full-stack Reddit-integrated app with sub-100ms backend APIs using Redis caching. Served 1,000+ potential users and reduced runtime errors 40% via TypeScript strict mode.
-              </p>
-              <div class="badge-row">
-                <span class="badge orange">React 19</span>
-                <span class="badge orange">Express.js</span>
-                <span class="badge orange">TypeScript</span>
-                <span class="badge orange">Redis</span>
-                <span class="badge orange">Reddit API</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Currently Focused On -->
-          <div class="block focused-block">
-            <div class="block-label">Currently Focused On</div>
-            <ul class="focused-list">
-              <li>AI system evaluation, reliability, and reducing hallucination in production RAG pipelines</li>
-              <li>Automation in risk, compliance, and enterprise workflow systems</li>
-              <li>Scalable backend architecture and cloud infrastructure design</li>
+          <div class="exp-content">
+            <p class="role">AI Systems Engineer <span class="role-tag">POC</span></p>
+            <p class="company">University of Arizona &times; McGraw Hill &nbsp;&middot;&nbsp; Remote</p>
+            <ul class="description">
+              <li>Architecting a controlled, RAG-based GPT framework enabling instructors to create textbook-grounded, task-specific AI assistants.</li>
+              <li>Enforcing role-based and content-level guardrails to constrain retrieval and model behavior to approved instructional materials.</li>
+              <li>Designing source-aware response patterns that reference specific textbook chapters or sections to improve transparency and trust.</li>
+              <li>Optimizing retrieval design, chunking strategies, and evaluation criteria to improve response consistency and reduce hallucination risk.</li>
             </ul>
-          </div>
-
-          <!-- Beyond Tech -->
-          <div id="contact" class="block beyond-block">
-            <div class="block-label">Beyond Tech</div>
-            <p class="intro-text">
-              When I'm not building or coding, I like pushing myself in other ways, whether through training, sports, or learning about geopolitics and human behavior. I'm naturally curious about how complex systems work, and that perspective shows up in the way I think about software and real-world problems.
-            </p>
-          </div>
-
-          <!-- Resume -->
-          <div class="resume-container">
-            <a href="./Resume.pdf" download class="resume-btn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download Résumé
-            </a>
-          </div>
-
-          <!-- Footer -->
-          <footer class="footer">
-            <p class="footer-copy">© 2026 Harsh Jain</p>
-            <div class="footer-links">
-              <a href="mailto:harshjain.cs.30@gmail.com" class="footer-link">Contact</a>
-              <a href="https://linkedin.com/in/-harshitjain/" target="_blank" class="footer-link">LinkedIn</a>
-              <a href="https://github.com/harsh7115" target="_blank" class="footer-link">GitHub</a>
+            <div class="badge-row">
+              <span class="badge">RAG</span>
+              <span class="badge">LLM Systems</span>
+              <span class="badge">Prompt Engineering</span>
+              <span class="badge">AWS Bedrock</span>
             </div>
-          </footer>
-
+          </div>
         </div>
+
+        <!-- Handshake Fellowship -->
+        <div class="block experience-block">
+          <div class="exp-meta">
+            <span class="exp-date">Sep 2025 &ndash; Present</span>
+            <span class="exp-badge active-badge">Active</span>
+          </div>
+          <div class="exp-content">
+            <p class="role">Computer Science Fellow</p>
+            <p class="company">Handshake AI &nbsp;&middot;&nbsp; Remote</p>
+            <ul class="description">
+              <li>Building reproducible Docker-based test environments to enable automated evaluation of AI software engineering agents at scale.</li>
+              <li>Re-implementing bug fixes across unfamiliar codebases as ground-truth solutions, authoring fail-to-pass test cases and structured problem prompts for AI agent training.</li>
+              <li>Analyzing failure patterns in agent outputs to refine evaluation pipelines and improve benchmark reliability across iterative testing cycles.</li>
+            </ul>
+            <div class="badge-row">
+              <span class="badge">AI Agent Benchmarking</span>
+              <span class="badge">Docker</span>
+              <span class="badge">LLM Evaluation</span>
+              <span class="badge">Fail-to-Pass Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAAQ -->
+        <div class="block experience-block">
+          <div class="exp-meta">
+            <span class="exp-date">Oct 2025 &ndash; Jan 2026</span>
+          </div>
+          <div class="exp-content">
+            <p class="role">Founding Engineer</p>
+            <p class="company">SkillfullyAware (SAAQ) App &nbsp;&middot;&nbsp; Tucson</p>
+            <ul class="description">
+              <li>Designed scalable, API-driven backend services to process structured and unstructured user input into analytics pipelines.</li>
+              <li>Implemented RESTful services powering frontend features and internal system integrations.</li>
+              <li>Led MVP backend development across core services, data models, and application workflows under evolving product requirements.</li>
+              <li>Integrated external LLM APIs and vector-based retrieval components to support early-stage AI feature experimentation.</li>
+            </ul>
+            <div class="badge-row">
+              <span class="badge">REST APIs</span>
+              <span class="badge">Vector Databases</span>
+              <span class="badge">LangChain</span>
+              <span class="badge">MVP Development</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Andrew Weil Center -->
+        <div class="block experience-block">
+          <div class="exp-meta">
+            <span class="exp-date">Aug 2025 &ndash; Dec 2025</span>
+          </div>
+          <div class="exp-content">
+            <p class="role">AI Solutions Developer &ndash; RAG Systems</p>
+            <p class="company">Andrew Weil Center for Integrative Medicine &nbsp;&middot;&nbsp; Tucson</p>
+            <ul class="description">
+              <li>Built an AI-powered RAG chatbot for the CanHeal Cancer Toolkit, deployed on AWS microservices to streamline oncology resource access.</li>
+              <li>Conducted user research and iterative testing with medical stakeholders to ensure usability and HIPAA compliance.</li>
+              <li>Produced technical documentation and delivered client-ready demos for faculty and sponsors.</li>
+            </ul>
+            <div class="badge-row">
+              <span class="badge">AWS</span>
+              <span class="badge">RAG</span>
+              <span class="badge">Microservices</span>
+              <span class="badge">Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRC Analyst -->
+        <div class="block experience-block">
+          <div class="exp-meta">
+            <span class="exp-date">Sep 2023 &ndash; Aug 2025</span>
+          </div>
+          <div class="exp-content">
+            <p class="role">GRC Automation Analyst</p>
+            <p class="company">University of Arizona IT Services &nbsp;&middot;&nbsp; Tucson</p>
+            <ul class="description">
+              <li>Automated ServiceNow GRC workflows, cutting manual review time by 25% and improving policy audit traceability.</li>
+              <li>Developed SQL/PostgreSQL dashboards tracking compliance risk metrics used by three internal teams.</li>
+              <li>Delivered Agile-based feature updates under tight deadlines while maintaining Git version control integrity.</li>
+            </ul>
+            <div class="badge-row">
+              <span class="badge">ServiceNow</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Agile</span>
+              <span class="badge">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Section Header -->
+        <div id="projects" class="section-header">
+          <span class="section-label-large">Projects</span>
+        </div>
+
+       <div class="block project-block">
+          <div class="project-year">2026</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/guardrail-auditor" target="_blank" class="project-link">
+                guardrail-auditor
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              LLM security auditing SaaS that red-teams prompt-injection, data leakage, and role-bypass vulnerabilities — built with Next.js 14, Prisma, and Tailwind CSS, deployed on Vercel.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">TypeScript</span>
+              <span class="badge orange">Next.js 14</span>
+              <span class="badge orange">Prisma</span>
+              <span class="badge orange">AI Safety</span>
+              <span class="badge orange">SaaS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2026</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/c-coroutine" target="_blank" class="project-link">
+                c-coroutine
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              Cooperative coroutine (fiber) library in C — hand-written x86-64 context switch, FIFO scheduler, and co_yield/co_await primitives with zero external dependencies.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">C</span>
+              <span class="badge orange">x86-64</span>
+              <span class="badge orange">Systems Programming</span>
+              <span class="badge orange">Concurrency</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2026</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/go-ratelimiter" target="_blank" class="project-link">
+                go-ratelimiter
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              Thread-safe rate limiting library in Go implementing token bucket, sliding window, and leaky bucket algorithms — zero dependencies, designed for use as middleware in backend services.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">Go</span>
+              <span class="badge orange">Rate Limiting</span>
+              <span class="badge orange">Middleware</span>
+              <span class="badge orange">Concurrent</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2026</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/Library-Management" target="_blank" class="project-link">
+                Library-Management
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              Java desktop library management app with book search, to-read lists, ratings, and a full JUnit test suite — built with Swing and a clean OOP/MVC design pattern.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">Java</span>
+              <span class="badge orange">Swing</span>
+              <span class="badge orange">OOP/MVC</span>
+              <span class="badge orange">JUnit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2026</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/go-lrucache" target="_blank" class="project-link">
+                go-lrucache
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              Thread-safe, generic LRU cache in Go with O(1) get/put and optional TTL-based eviction — designed for high-concurrency workloads with zero external dependencies.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">Go</span>
+              <span class="badge orange">Generics</span>
+              <span class="badge orange">Data Structures</span>
+              <span class="badge orange">Concurrent</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/go-distributed-kv" target="_blank" class="project-link">
+                go-distributed-kv
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              Fault-tolerant distributed key-value store built from scratch in Go using the Raft consensus algorithm — implements leader election, log replication, snapshotting, and membership changes. Serves ~12k write ops/sec and ~18k linearizable reads/sec on a 3-node cluster via a gRPC transport layer and clean HTTP API.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">Go</span>
+              <span class="badge orange">Raft</span>
+              <span class="badge orange">gRPC</span>
+              <span class="badge orange">Distributed Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <p class="role">
+              <a href="https://github.com/Harsh7115/unix-shell" target="_blank" class="project-link">
+                unix-shell
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;margin-left:4px;vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </p>
+            <p class="description-text">
+              POSIX-compliant Unix shell implemented from scratch in C — supports arbitrary pipeline chains, I/O redirection, background jobs, signal handling (SIGINT, SIGTSTP, SIGCHLD), and a full set of built-ins including job control (fg/bg), history, and environment variable management.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">C</span>
+              <span class="badge orange">Systems Programming</span>
+              <span class="badge orange">Unix</span>
+              <span class="badge orange">Process Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <p class="role">
+              Operating System Simulation
+            </p>
+            <p class="description-text">
+              Engineered a UNIX-like OS kernel in C from scratch — implementing 4 scheduling algorithms (FCFS, SJF, Round Robin, Priority), IPC via semaphores and shared memory, and hardware interrupt simulation managing 50+ concurrent process contexts.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">C</span>
+              <span class="badge orange">Concurrency</span>
+              <span class="badge orange">Systems Programming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2024</div>
+          <div class="project-content">
+            <p class="role">
+              JIRA-Inspired Project Management Tool
+            </p>
+            <p class="description-text">
+              Shipped a collaborative project management platform supporting real-time sprint tracking and task workflows across multi-user teams — powered by Django and Socket.io, deployed on AWS with sub-second update propagation.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">Python</span>
+              <span class="badge orange">Django</span>
+              <span class="badge orange">AWS</span>
+              <span class="badge orange">Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block project-block">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <p class="role">
+              OneLiner — Reddit Hackathon
+            </p>
+            <p class="description-text">
+              Built a full-stack Reddit-integrated app with sub-100ms backend APIs using Redis caching. Served 1,000+ potential users and reduced runtime errors 40% via TypeScript strict mode.
+            </p>
+            <div class="badge-row">
+              <span class="badge orange">React 19</span>
+              <span class="badge orange">Express.js</span>
+              <span class="badge orange">TypeScript</span>
+              <span class="badge orange">Redis</span>
+              <span class="badge orange">Reddit API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently Focused On -->
+        <div class="block focused-block">
+          <div class="block-label">Currently Focused On</div>
+          <ul class="focused-list">
+            <li>AI system evaluation, reliability, and reducing hallucination in production RAG pipelines</li>
+            <li>Automation in risk, compliance, and enterprise workflow systems</li>
+            <li>Scalable backend architecture and cloud infrastructure design</li>
+          </ul>
+        </div>
+
+        <!-- Beyond Tech -->
+        <div id="contact" class="block beyond-block">
+          <div class="block-label">Beyond Tech</div>
+          <p class="intro-text">
+            When I'm not building or coding, I like pushing myself in other ways, whether through training, sports, or learning about geopolitics and human behavior. I'm naturally curious about how complex systems work, and that perspective shows up in the way I think about software and real-world problems.
+          </p>
+        </div>
+
+        <!-- Resume -->
+        <div class="resume-container">
+          <a href="./Resume.pdf" download class="resume-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download R&eacute;sum&eacute;
+          </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p class="footer-copy">&copy; 2026 Harsh Jain</p>
+          <div class="footer-links">
+            <a href="mailto:harshjain.cs.30@gmail.com" class="footer-link">Contact</a>
+            <a href="https://linkedin.com/in/-harshitjain/" target="_blank" class="footer-link">LinkedIn</a>
+            <a href="https://github.com/harsh7115" target="_blank" class="footer-link">GitHub</a>
+          </div>
+        </footer>
+
       </div>
     </div>
+  </div>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+</body>
 </html>
