@@ -105,10 +105,10 @@ sectionIds.forEach((id) => {
   if (!el) return;
 
   const phrases = [
-    'AI & Software Engineer',
-    'CS Senior @ U of Arizona',
+    'AI & Backend Engineer',
+    'CS Grad · U of Arizona',
     'RAG & LLM Systems Builder',
-    'Founding Engineer',
+    'Distributed Systems Builder',
   ];
 
   let phraseIndex   = 0;
